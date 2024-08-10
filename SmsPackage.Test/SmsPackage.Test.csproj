@@ -13,8 +13,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\SmsPackage.LianluApi\SmsPackage.LianluApi.csproj" />
-    <ProjectReference Include="..\SmsPackage.ZhutongApi\SmsPackage.ZhutongApi.csproj" />
+    <ProjectReference Include="..\SmsPackage.Api.Lianlu\SmsPackage.Api.Lianlu.csproj" />
+    <ProjectReference Include="..\SmsPackage.Api.Zhutong\SmsPackage.Api.Zhutong.csproj" />
   </ItemGroup>
 
 </Project>

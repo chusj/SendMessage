@@ -7,11 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmsPackage.Model", "SmsPack
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmsPackage.Service", "SmsPackage.Service\SmsPackage.Service.csproj", "{142A3C83-1F4B-4138-A4E3-14CEA781C96D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsPackage.Test", "SmsPackage.Test\SmsPackage.Test.csproj", "{71A49E61-29A8-491F-9C1A-B9B42C7DA70A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmsPackage.Test", "SmsPackage.Test\SmsPackage.Test.csproj", "{71A49E61-29A8-491F-9C1A-B9B42C7DA70A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsPackage.ZhutongApi", "SmsPackage.ZhutongApi\SmsPackage.ZhutongApi.csproj", "{7D69AFAB-3325-41FA-88DF-53306C51B235}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmsPackage.Api.Lianlu", "SmsPackage.Api.Lianlu\SmsPackage.Api.Lianlu.csproj", "{A88B7085-A951-428D-B829-831E0336622E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsPackage.LianluApi", "SmsPackage.LianluApi\SmsPackage.LianluApi.csproj", "{C6AC3B32-8C16-4F85-A8EF-5750629196DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmsPackage.Api.Zhutong", "SmsPackage.Api.Zhutong\SmsPackage.Api.Zhutong.csproj", "{E886D1A4-CE33-4E74-AD85-6EF1A797E7CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,14 +31,14 @@ Global
 		{71A49E61-29A8-491F-9C1A-B9B42C7DA70A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71A49E61-29A8-491F-9C1A-B9B42C7DA70A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71A49E61-29A8-491F-9C1A-B9B42C7DA70A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7D69AFAB-3325-41FA-88DF-53306C51B235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7D69AFAB-3325-41FA-88DF-53306C51B235}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7D69AFAB-3325-41FA-88DF-53306C51B235}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7D69AFAB-3325-41FA-88DF-53306C51B235}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C6AC3B32-8C16-4F85-A8EF-5750629196DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C6AC3B32-8C16-4F85-A8EF-5750629196DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C6AC3B32-8C16-4F85-A8EF-5750629196DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C6AC3B32-8C16-4F85-A8EF-5750629196DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A88B7085-A951-428D-B829-831E0336622E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A88B7085-A951-428D-B829-831E0336622E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A88B7085-A951-428D-B829-831E0336622E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A88B7085-A951-428D-B829-831E0336622E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E886D1A4-CE33-4E74-AD85-6EF1A797E7CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E886D1A4-CE33-4E74-AD85-6EF1A797E7CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E886D1A4-CE33-4E74-AD85-6EF1A797E7CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E886D1A4-CE33-4E74-AD85-6EF1A797E7CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
