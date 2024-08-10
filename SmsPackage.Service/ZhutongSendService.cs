@@ -16,7 +16,7 @@ namespace SmsPackage.Service
         {
             url = options.Value.ApiUrl + options.Value.ApiPath;
             username = options.Value.UserName;
-            password = options.Value.Key;
+            password = options.Value.Password;
             //原始密码二次处理
             key = DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString();
             string newPassword = MD5Helper.EncryptMD5(password);
