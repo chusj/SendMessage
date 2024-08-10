@@ -10,4 +10,8 @@
 		<PackageReference Include="Microsoft.Extensions.Options" Version="3.1.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\SmsPackage.Service\SmsPackage.Service.csproj" />
+	</ItemGroup>
+
 </Project>
