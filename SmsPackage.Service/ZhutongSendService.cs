@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json;
 using SmsPackage.Model;
 using SmsPackage.Service.Helper;
+using Microsoft.Extensions.Options;
 
 namespace SmsPackage.Service
 {
@@ -11,9 +12,15 @@ namespace SmsPackage.Service
         private string key = string.Empty;
         private string url = string.Empty;
 
-        public ZhutongSendService()
+        public ZhutongSendService(IOptionsSnapshot<ZhutongOptions> options)
         {
-            
+            url = options.Value.ApiUrl + options.Value.ApiPath;
+            username = options.Value.UserName;
+            password = options.Value.Key;
+            //原始密码二次处理
+            key = DateTimeOffset.UtcNow.ToUnixTimeSeconds().ToString();
+            string newPassword = MD5Helper.EncryptMD5(password);
+            password = MD5Helper.EncryptMD5(newPassword + key);
         }
 
         public async Task<ApiResponse> Send(List<string> mobileList, string content)

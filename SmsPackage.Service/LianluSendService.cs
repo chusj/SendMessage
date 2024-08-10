@@ -1,7 +1,7 @@
-﻿using Newtonsoft.Json;
+﻿using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
 using SmsPackage.Model;
 using SmsPackage.Service.Helper;
-using System;
 
 namespace SmsPackage.Service
 {
@@ -12,9 +12,12 @@ namespace SmsPackage.Service
         private string appKey = string.Empty;
         private string url = string.Empty;
 
-        public LianluSendService()
+        public LianluSendService(IOptionsSnapshot<LianluOptions> options)
         {
-
+            url = options.Value.ApiUrl + options.Value.ApiPath;
+            appId = options.Value.AppId;
+            mchId = options.Value.MchId;
+            appKey = options.Value.AppKey;
         }
 
         public async Task<ApiResponse> Send(List<string> mobileList, string content, string suffix)
