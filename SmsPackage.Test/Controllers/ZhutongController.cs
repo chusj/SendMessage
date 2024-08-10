@@ -9,15 +9,15 @@ namespace SmsPackage.Test.Controllers
     public class ZhutongController : ControllerBase
     {
         private readonly IZhutongService _zhutongService;
-        public ZhutongController()
+        public ZhutongController(IConfiguration config)
         {
             IServiceCollection services = new ServiceCollection();
             services.AddZhutongSendMessageApi(option =>
             {
-                option.ApiUrl = "";
-                option.ApiPath = "";
-                option.UserName = "";
-                option.Key = "";
+                option.ApiUrl = config.GetValue<string>("ZhuTong:ApiUrl");
+                option.ApiPath = config.GetValue<string>("ZhuTong:ApiPath");
+                option.UserName = config.GetValue<string>("ZhuTong:UserName");
+                option.Password = config.GetValue<string>("ZhuTong:Password");
             });
             IServiceProvider serviceProvider = services.BuildServiceProvider();
 

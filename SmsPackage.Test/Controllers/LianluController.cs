@@ -10,16 +10,16 @@ namespace SmsPackage.Test.Controllers
     public class LianluController : ControllerBase
     {
         private readonly ILianluService _lianluService;
-        public LianluController()
+        public LianluController(IConfiguration config)
         {
             IServiceCollection services = new ServiceCollection();
             services.AddLianluSendMessageApi(option =>
             {
-                option.ApiUrl = "";
-                option.ApiPath = "";
-                option.MchId = "";
-                option.AppId = "";
-                option.AppKey = "";
+                option.ApiUrl = config.GetValue<string>("LianLu:ApiUrl");
+                option.ApiPath = config.GetValue<string>("LianLu:ApiPath");
+                option.MchId = config.GetValue<string>("LianLu:MchId");
+                option.AppId = config.GetValue<string>("LianLu:AppId");
+                option.AppKey = config.GetValue<string>("LianLu:AppKey");
             });
             IServiceProvider serviceProvider = services.BuildServiceProvider();
 
