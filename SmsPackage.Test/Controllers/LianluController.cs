@@ -15,8 +15,8 @@ namespace SmsPackage.Test.Controllers
             IServiceCollection services = new ServiceCollection();
             services.AddLianluSendMessageApi(option =>
             {
-                option.ApiUrl = "https://apis.shlianlu.com";
-                option.ApiPath = "/sms/trade/normal/send";
+                option.ApiUrl = "";
+                option.ApiPath = "";
                 option.MchId = "";
                 option.AppId = "";
                 option.AppKey = "";

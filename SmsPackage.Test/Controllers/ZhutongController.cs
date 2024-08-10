@@ -14,8 +14,8 @@ namespace SmsPackage.Test.Controllers
             IServiceCollection services = new ServiceCollection();
             services.AddZhutongSendMessageApi(option =>
             {
-                option.ApiUrl = "http://api.mix2.zthysms.com";
-                option.ApiPath = "/v2/sendSms";
+                option.ApiUrl = "";
+                option.ApiPath = "";
                 option.UserName = "";
                 option.Key = "";
             });
