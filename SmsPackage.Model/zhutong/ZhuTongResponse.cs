@@ -1,7 +1,7 @@
 ﻿namespace SmsPackage.Model
 {
     /// <summary>
-    /// 助通响应内容
+    /// 助通响应
     /// </summary>
     public class ZhuTongResponse:ISmsResponse
     {

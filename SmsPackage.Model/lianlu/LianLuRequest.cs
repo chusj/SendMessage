@@ -1,5 +1,8 @@
 ﻿namespace SmsPackage.Model
 {
+    /// <summary>
+    /// 联麓请求
+    /// </summary>
     public class LianLuRequest : ISmsRequest
     {
         /// <summary>

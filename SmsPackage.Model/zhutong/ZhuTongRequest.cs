@@ -1,6 +1,9 @@
 ﻿namespace SmsPackage.Model
 {
-    internal class ZhuTongRequest: ISmsRequest
+    /// <summary>
+    /// 助通请求
+    /// </summary>
+    public class ZhuTongRequest: ISmsRequest
     {
         /// <summary>
         /// 用户名

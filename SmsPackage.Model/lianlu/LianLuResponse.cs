@@ -1,5 +1,8 @@
 ﻿namespace SmsPackage.Model
 {
+    /// <summary>
+    /// 联麓响应
+    /// </summary>
     public class LianLuResponse: ISmsResponse
     {
         /// <summary>
