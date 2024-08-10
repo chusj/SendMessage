@@ -22,7 +22,6 @@ namespace SmsPackage.Test.Controllers
             IServiceProvider serviceProvider = services.BuildServiceProvider();
 
             _zhutongService = serviceProvider.GetService<IZhutongService>();
-
         }
 
         [HttpPost]

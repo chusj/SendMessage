@@ -24,7 +24,6 @@ namespace SmsPackage.Test.Controllers
             IServiceProvider serviceProvider = services.BuildServiceProvider();
 
             _lianluService = serviceProvider.GetService<ILianluService>();
-
         }
 
         [HttpPost]
