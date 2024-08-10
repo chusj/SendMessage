@@ -19,8 +19,6 @@ namespace SmsPackage.Service
 
         public async Task<ApiResponse> Send(List<string> mobileList, string content, string suffix)
         {
-            ApiResponse apiResponse = new ApiResponse(new LianLuResponse());
-
             string timestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds().ToString();
             var request = new LianLuRequest
             {
@@ -38,12 +36,13 @@ namespace SmsPackage.Service
                                 $"&TimeStamp={request.TimeStamp}&Type={request.Type}" +
                                 $"&Version={request.Version}&key={appKey}";
 
-            Console.WriteLine("签名字符串：" + signString);
-
             // 计算签名
             request.Signature = MD5Helper.EncryptMD5(signString).ToUpper();
 
+            //提交请求
             (bool success, string message) reuslt = await PostHelper.SendPostAsync(request, url);
+
+            ApiResponse apiResponse = new ApiResponse(new ZhuTongResponse());
             if (reuslt.success)
             {
                 LianLuResponse lianLuResponse = JsonConvert.DeserializeObject<LianLuResponse>(reuslt.message);
