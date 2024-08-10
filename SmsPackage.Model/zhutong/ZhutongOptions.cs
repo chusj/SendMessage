@@ -2,12 +2,6 @@
 {
     public class ZhutongOptions : ISmsOptions
     {
-        public ZhutongOptions()
-        {
-            ApiUrl = "http://api.mix2.zthysms.com";
-            ApiPath = "/v2/sendSms";
-        }
-
         /// <summary>
         /// 用户名
         /// </summary>

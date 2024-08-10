@@ -1,13 +1,7 @@
 ﻿namespace SmsPackage.Model
 {
-    internal class LianluIOptions : ISmsOptions
+    public class LianluOptions : ISmsOptions
     {
-        public LianluIOptions()
-        {
-            ApiUrl = "https://apis.shlianlu.com";
-            ApiPath = "/sms/trade/normal/send";
-        }
-
         /// <summary>
         /// 企业id
         /// </summary>
