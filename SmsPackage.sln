@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XiheSmsLib", "XiheSmsLib\XiheSmsLib.csproj", "{E51349EE-593A-427F-9142-A165F0C8A017}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmsPackage.Model", "SmsPackage.Model\SmsPackage.Model.csproj", "{032AC04C-EC58-4391-8EC0-8DE99332C758}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SmsPackage.Service", "SmsPackage.Service\SmsPackage.Service.csproj", "{142A3C83-1F4B-4138-A4E3-14CEA781C96D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsPackage.Test", "SmsPackage.Test\SmsPackage.Test.csproj", "{71A49E61-29A8-491F-9C1A-B9B42C7DA70A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsPackage.ZhutongApi", "SmsPackage.ZhutongApi\SmsPackage.ZhutongApi.csproj", "{7D69AFAB-3325-41FA-88DF-53306C51B235}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SmsPackage.LianluApi", "SmsPackage.LianluApi\SmsPackage.LianluApi.csproj", "{C6AC3B32-8C16-4F85-A8EF-5750629196DC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E51349EE-593A-427F-9142-A165F0C8A017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E51349EE-593A-427F-9142-A165F0C8A017}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E51349EE-593A-427F-9142-A165F0C8A017}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E51349EE-593A-427F-9142-A165F0C8A017}.Release|Any CPU.Build.0 = Release|Any CPU
 		{032AC04C-EC58-4391-8EC0-8DE99332C758}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{032AC04C-EC58-4391-8EC0-8DE99332C758}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{032AC04C-EC58-4391-8EC0-8DE99332C758}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -27,6 +27,18 @@ Global
 		{142A3C83-1F4B-4138-A4E3-14CEA781C96D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{142A3C83-1F4B-4138-A4E3-14CEA781C96D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{142A3C83-1F4B-4138-A4E3-14CEA781C96D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71A49E61-29A8-491F-9C1A-B9B42C7DA70A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71A49E61-29A8-491F-9C1A-B9B42C7DA70A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71A49E61-29A8-491F-9C1A-B9B42C7DA70A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71A49E61-29A8-491F-9C1A-B9B42C7DA70A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D69AFAB-3325-41FA-88DF-53306C51B235}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D69AFAB-3325-41FA-88DF-53306C51B235}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D69AFAB-3325-41FA-88DF-53306C51B235}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D69AFAB-3325-41FA-88DF-53306C51B235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6AC3B32-8C16-4F85-A8EF-5750629196DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6AC3B32-8C16-4F85-A8EF-5750629196DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6AC3B32-8C16-4F85-A8EF-5750629196DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6AC3B32-8C16-4F85-A8EF-5750629196DC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
