@@ -25,7 +25,7 @@ namespace SmsPackage.Test.Controllers
         }
 
         [HttpPost]
-        public async Task<ApiResponse> Test()
+        public async Task<ZhuTongApiResponse> Test()
         {
             var mobiles = new List<string>() { "15906663439"};
             return await _zhutongService.Send(mobiles, "Z您好，今天您的生日，祝您生日快乐。 温馨提醒：为了您的健康请定期进行健康体检。【杭州希和】");

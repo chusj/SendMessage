@@ -3,7 +3,7 @@
     /// <summary>
     /// 联麓响应
     /// </summary>
-    public class LianLuResponse: ISmsResponse
+    public class LianLuResponse
     {
         /// <summary>
         /// 接口请求状态码

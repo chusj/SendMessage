@@ -14,6 +14,6 @@ namespace SmsPackage.Service
         /// <param name="content">内容</param>
         /// <param name="suffix">签名</param>
         /// <returns></returns>
-        Task<ApiResponse> Send(List<string> mobileList, string content, string suffix);
+        Task<LianLuApiResponse> Send(List<string> mobileList, string content, string suffix);
     }
 }

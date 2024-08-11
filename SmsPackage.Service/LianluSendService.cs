@@ -20,7 +20,7 @@ namespace SmsPackage.Service
             appKey = options.Value.AppKey;
         }
 
-        public async Task<ApiResponse> Send(List<string> mobileList, string content, string suffix)
+        public async Task<LianLuApiResponse> Send(List<string> mobileList, string content, string suffix)
         {
             string timestamp = DateTimeOffset.UtcNow.ToUnixTimeMilliseconds().ToString();
             var request = new LianLuRequest
@@ -45,14 +45,15 @@ namespace SmsPackage.Service
             //提交请求
             (bool success, string message) reuslt = await PostHelper.SendPostAsync(request, url);
 
-            ApiResponse apiResponse = new ApiResponse(new ZhuTongResponse());
+            LianLuApiResponse apiResponse = new LianLuApiResponse();
+
             if (reuslt.success)
             {
                 LianLuResponse lianLuResponse = JsonConvert.DeserializeObject<LianLuResponse>(reuslt.message);
                 if (lianLuResponse.Status == "00")
                 {
                     apiResponse.Code = 200;
-                    apiResponse.smsResponse = lianLuResponse;
+                    apiResponse.Response = lianLuResponse;
                 }
                 apiResponse.Message = lianLuResponse.Message;
             }

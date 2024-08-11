@@ -23,7 +23,7 @@ namespace SmsPackage.Service
             password = MD5Helper.EncryptMD5(newPassword + key);
         }
 
-        public async Task<ApiResponse> Send(List<string> mobileList, string content)
+        public async Task<ZhuTongApiResponse> Send(List<string> mobileList, string content)
         {
             ZhuTongRequest request = new ZhuTongRequest();
             request.username = username;
@@ -34,14 +34,14 @@ namespace SmsPackage.Service
 
             (bool success, string message) reuslt = await PostHelper.SendPostAsync(request, url);
 
-            ApiResponse apiResponse = new ApiResponse(new ZhuTongResponse());
+            ZhuTongApiResponse apiResponse = new ZhuTongApiResponse();
             if (reuslt.success)
             {
                 ZhuTongResponse zhutongResponse = JsonConvert.DeserializeObject<ZhuTongResponse>(reuslt.message);
                 if (zhutongResponse.Code == "200")
                 {
                     apiResponse.Code = 200;
-                    apiResponse.smsResponse = zhutongResponse;
+                    apiResponse.Response = zhutongResponse;
                 }
                 apiResponse.Message = zhutongResponse.Msg;
             }
@@ -49,7 +49,6 @@ namespace SmsPackage.Service
             {
                 apiResponse.Code = 500;
                 apiResponse.Message = reuslt.message;
-                apiResponse.smsResponse = null;
             }
             return apiResponse;
         }

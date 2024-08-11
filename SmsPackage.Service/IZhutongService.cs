@@ -13,6 +13,6 @@ namespace SmsPackage.Service
         /// <param name="mobileList">手机号码</param>
         /// <param name="content">内容</param>
         /// <returns></returns>
-        Task<ApiResponse> Send(List<string> mobileList, string content);
+        Task<ZhuTongApiResponse> Send(List<string> mobileList, string content);
     }
 }
