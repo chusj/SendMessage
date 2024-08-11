@@ -3,7 +3,7 @@
     /// <summary>
     /// 助通响应
     /// </summary>
-    public class ZhuTongResponse:ISmsResponse
+    public class ZhuTongResponse
     {
         /// <summary>
         /// 状态码
