@@ -1,18 +1,10 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Title>短信包，用于快速对接短信公司API（上海联麓）</Title>
-    <Authors>ChuShangJun</Authors>
-    <Company></Company>
-    <Product>快速发送短信</Product>
-    <RepositoryType>git</RepositoryType>
-    <PackageProjectUrl>https://www.shlianlu.com/console/document/api_4_2</PackageProjectUrl>
-    <RepositoryUrl>https://gitee.com/chusj/send-message.git</RepositoryUrl>
-    <PackageTags>发送短信;短信接口;上海联麓;联麓</PackageTags>
+	  <TargetFramework>netstandard2.1</TargetFramework>
+	  <LangVersion>10.0</LangVersion>
+	  <ImplicitUsings>false</ImplicitUsings>
+	  <Nullable>enable</Nullable>
   </PropertyGroup>
 
 	<ItemGroup>
