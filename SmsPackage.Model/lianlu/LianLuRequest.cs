@@ -1,4 +1,6 @@
-﻿namespace SmsPackage.Model
+﻿using System.Collections.Generic;
+
+namespace SmsPackage.Model
 {
     /// <summary>
     /// 联麓请求
