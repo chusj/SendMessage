@@ -16,6 +16,11 @@
         public string apId { get; set; }
 
         /// <summary>
+        /// 密钥
+        /// </summary>
+        public string secretKey { get; set; }
+
+        /// <summary>
         /// 签名编码
         /// </summary>
         public string sign { get; set; }
