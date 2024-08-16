@@ -5,4 +5,7 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+	<ItemGroup>
+		<ProjectReference Include="..\SmsPackage.Service\SmsPackage.Service.csproj" />
+	</ItemGroup>
 </Project>
