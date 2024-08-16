@@ -1,5 +1,8 @@
 ﻿namespace SmsPackage.Model
 {
+    /// <summary>
+    /// 联麓配置项
+    /// </summary>
     public class LianluOptions : ISmsOptions
     {
         /// <summary>
@@ -17,6 +20,7 @@
         /// </summary>
         public string AppKey { get; set; }
 
+        //以下属性来自接口
         public string ApiUrl { get; set; }
         public string ApiPath { get; set; }
     }

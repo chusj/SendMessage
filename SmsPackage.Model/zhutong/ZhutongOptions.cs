@@ -1,5 +1,8 @@
 ﻿namespace SmsPackage.Model
 {
+    /// <summary>
+    /// 助通配置项
+    /// </summary>
     public class ZhutongOptions : ISmsOptions
     {
         /// <summary>
@@ -12,6 +15,7 @@
         /// </summary>
         public string Password { get; set; }
 
+        //以下属性来自接口
         public string ApiUrl { get; set; }
         public string ApiPath { get; set; }
     }
