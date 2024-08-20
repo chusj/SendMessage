@@ -28,7 +28,7 @@ namespace SmsPackage.Test.Controllers
         public async Task<ZhuTongApiResponse> Test(string mobile)
         {
             var mobiles = new List<string>() { mobile };
-            return await _zhutongService.Send(mobiles, "您好，今天您的生日，祝您生日快乐。 温馨提醒：为了您的健康请定期进行健康体检。【杭州希和】");
+            return await _zhutongService.Send(mobiles, "您好，今天您的生日，祝您生日快乐。 温馨提醒：为了您的健康请定期进行健康体检。【公司名称】");
         }
     }
 }
