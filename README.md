@@ -1,26 +1,14 @@
-# NugetApp
+# MyFirstNugetApp
 
-#### 介绍
-只做Nuget程序
-
-#### 软件架构
-
-
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
+### 介绍
+将工作中用到了上海助通、上海联麓 2个短信公司的api接口，封装上传到nuget上
 
 
 
-#### 特技
-
+### 代码结构
+1. SmsPackage.Api.Lianlu  => 封装请求联麓短信接口的服务拓展方法
+2. SmsPackage.Api.Mas     => 封装请求中国移动云MAS的服务拓展方法
+3. SmsPackage.Api.Zhutong => 封装请求上海助通短信接口的服务拓展方法
+4. SmsPackage.Model       => 定义了各个厂家接口的请求参数、返回参数等
+5. SmsPackage.Service     => 实际的发送业务方法
+6. SmsPackage.Test        => 测试类库，当前已经应用了nuget上的包
