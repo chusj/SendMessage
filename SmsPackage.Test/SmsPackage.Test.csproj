@@ -9,9 +9,18 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="smsapi.lianlu" Version="1.0.0" />
+    <!--
+	<PackageReference Include="smsapi.lianlu" Version="1.0.0" />
     <PackageReference Include="smsapi.zhutong" Version="1.0.0" />
+	-->
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SmsPackage.Api.Lianlu\SmsPackage.Api.Lianlu.csproj" />
+    <ProjectReference Include="..\SmsPackage.Api.Mas\SmsPackage.Api.Mas.csproj" />
+    <ProjectReference Include="..\SmsPackage.Api.Zhutong\SmsPackage.Api.Zhutong.csproj" />
+    <ProjectReference Include="..\SmsPackage.Service\SmsPackage.Service.csproj" />
   </ItemGroup>
 
 </Project>
