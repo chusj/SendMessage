@@ -1,26 +1,30 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
-  <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <!--<Nullable>enable</Nullable>-->
-    <ImplicitUsings>enable</ImplicitUsings>
-    <InvariantGlobalization>true</InvariantGlobalization>
-    <UserSecretsId>b4e299a4-32ae-4fc5-8aed-c5a356b5fadd</UserSecretsId>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<!--<Nullable>enable</Nullable>-->
+		<ImplicitUsings>false</ImplicitUsings>
+		<InvariantGlobalization>true</InvariantGlobalization>
+		<UserSecretsId>b4e299a4-32ae-4fc5-8aed-c5a356b5fadd</UserSecretsId>
+	</PropertyGroup>
 
-  <ItemGroup>
-    <!--
-	<PackageReference Include="smsapi.lianlu" Version="1.0.0" />
-    <PackageReference Include="smsapi.zhutong" Version="1.0.0" />
-	-->
-    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
-  </ItemGroup>
+	<ItemGroup>
+		
+		<!--
+		<PackageReference Include="smsapi.cmcc.mas" Version="1.0.0" />
+		<PackageReference Include="smsapi.lianlu" Version="1.0.0" />
+		<PackageReference Include="smsapi.zhutong" Version="1.0.0" />
+		-->
+		
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		
+		<ProjectReference Include="..\SmsPackage.Api.Lianlu\SmsPackage.Api.Lianlu.csproj" />
+		<ProjectReference Include="..\SmsPackage.Api.Mas\SmsPackage.Api.Mas.csproj" />
+		<ProjectReference Include="..\SmsPackage.Api.Zhutong\SmsPackage.Api.Zhutong.csproj" />
 
-  <ItemGroup>
-    <ProjectReference Include="..\SmsPackage.Api.Lianlu\SmsPackage.Api.Lianlu.csproj" />
-    <ProjectReference Include="..\SmsPackage.Api.Mas\SmsPackage.Api.Mas.csproj" />
-    <ProjectReference Include="..\SmsPackage.Api.Zhutong\SmsPackage.Api.Zhutong.csproj" />
-    <ProjectReference Include="..\SmsPackage.Service\SmsPackage.Service.csproj" />
-  </ItemGroup>
+	</ItemGroup>
 
 </Project>
