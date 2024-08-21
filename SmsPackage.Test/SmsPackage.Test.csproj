@@ -9,13 +9,13 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <Compile Remove="Controllers\LianluController.cs" />
-	  <Compile Remove="Controllers\ZhutongController.cs" />
+		<PackageReference Include="smsapi.cmcc.mas" Version="1.0.1" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="smsapi.cmcc.mas" Version="1.0.1" />
-		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+	  <ProjectReference Include="..\SmsPackage.Api.Lianlu\SmsPackage.Api.Lianlu.csproj" />
+	  <ProjectReference Include="..\SmsPackage.Api.Zhutong\SmsPackage.Api.Zhutong.csproj" />
 	</ItemGroup>
 
 </Project>
