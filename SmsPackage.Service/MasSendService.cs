@@ -2,6 +2,7 @@
 using Newtonsoft.Json;
 using SmsPackage.Model;
 using SmsPackage.Service.Helper;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
@@ -53,7 +54,7 @@ namespace SmsPackage.Service
 
             //提交请求
             MasApiResponse apiResponse = new MasApiResponse();
-            (bool success, string message) reuslt = await PostHelper.SendPostAsync(request, url);
+            (bool success, string message) reuslt = await PostHelper.SendPostAsync(JsonConvert.SerializeObject(request), url);
             if (reuslt.success)
             {
                 MasResponse mas = JsonConvert.DeserializeObject<MasResponse>(reuslt.message);
@@ -71,5 +72,7 @@ namespace SmsPackage.Service
             }
             return apiResponse;
         }
+
+        
     }
 }
